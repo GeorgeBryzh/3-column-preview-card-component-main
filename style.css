@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+
+}
+@media screen and (max-width: 375px){
+    body {
+            /* border: solid; */
+            display: block;
+            padding: 80px 20px;
+    
+        }
+}
+.card{
+    /* border: solid; */
+    display: flex;
+    max-width: 920px;
+    
+}
+@media screen and (max-width: 375px){
+    .card {
+            /* border: solid; */
+            display: block;
+            
+            
+    
+        }
+}
+
+
+.sedans-card{
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   background-color: hsl(31, 77%, 52%);
+  
+   
+}
+
+@media screen and (max-width: 375px) {
+    .sedans-card {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+.suvs-card{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-card{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media screen and (max-width: 375px) {
+    .luxury-card {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+}
+
+.car-type-card {
+    position: relative;
+    padding: 50px 45px 50px 50px;
+    box-sizing: border-box;
+    flex: 1;
+}
+.car-type-card:nth-of-type(1) {
+    flex: 1.05;
+    
+}
+.car-type-card:nth-of-type(1) p{
+    margin-right: 20px;
+
+}
+@media screen and (max-width: 375px) {
+    .car-type-card:nth-of-type(1) p {
+      margin-right: -5px;
+        
+
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .car-type-card {
+            
+            padding: 50px 60px 50px 50px;
+            
+    }
+}
+.car-type-name {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%); 
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+.car-type-desc{
+    font-weight: 400px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+    margin-bottom: 125px;
+    line-height: 1.7;
+}
+
+.car-type-desc {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+    
+}
+@media screen and (max-width: 375px) {
+    .car-type-desc {
+           
+            margin-bottom: 70px;
+           
+        }
+}
+
+.learn-more-btn{
+    position: absolute;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400px;
+    background-color: hsl(0, 0%, 95%);
+    bottom: 0px;
+    margin-bottom: 45px;
+    height: 50px;
+    border: none;
+    border-radius: 75px;
+    width: 44%;
+    
+}
+
+.sedans-card .learn-more-btn {
+    color: hsl(31, 77%, 52%);
+    
+}
+
+.suvs-card .learn-more-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-card .learn-more-btn {
+    color: hsl(179, 100%, 13%);
+    
+}
+
+.learn-more-btn:hover {
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    border: solid 3px hsl(0, 0%, 95%);
+}
+
+
+
+
+
+
